@@ -1,0 +1,7 @@
+<p><%= @resource.email %>様</p>
+
+<p>あなたのアカウントは度重なるログインの失敗によってロックされています。</p>
+
+<p>下記のリンクをクリックし、ロックを解除してください。</p>
+
+<p><%= link_to 'ロックを解除する', unlock_url(@resource, :unlock_token => @resource.unlock_token) %></p>

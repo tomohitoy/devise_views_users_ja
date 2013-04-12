@@ -1,0 +1,12 @@
+<h2>ロック解除申請メール</h2>
+
+<%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div>メールアドレス<br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.submit "送信する" %></div>
+<% end %>
+
+<%= render "users/shared/links" %>

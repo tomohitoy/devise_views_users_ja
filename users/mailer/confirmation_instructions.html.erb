@@ -1,0 +1,5 @@
+<p><%= @email %>様　Missinへようこそ！</p>
+
+<p>企業やメンターから出題されるミッションを解決し世界を広げましょう！</p>
+
+<p><%= link_to 'メールアドレスを確認した', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
